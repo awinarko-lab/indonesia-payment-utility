@@ -1,12 +1,12 @@
 {
-    "name": "nunomaduro/skeleton-php",
-    "description": "A skeleton repository for my packages",
-    "keywords": ["php", "skeleton", "package"],
+    "name": "awinarko/indonesia-utilities",
+    "description": "Indonesian utilities package for payment applications",
+    "keywords": ["php", "indonesia", "rupiah", "terbilang", "nik", "phone", "bank", "payment", "utilities"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Nuno Maduro",
-            "email": "enunomaduro@gmail.com"
+            "name": "Andy Winarko",
+            "email": "awinarko@outlook.com"
         }
     ],
     "require": {
@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "NunoMaduro\\SkeletonPhp\\": "src/"
+            "Awinarko\\IndonesiaUtilities\\": "src/"
         }
     },
     "autoload-dev": {
