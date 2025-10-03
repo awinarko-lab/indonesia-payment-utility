@@ -1,23 +1,68 @@
-<p align="center">
-    <img src="https://raw.githubusercontent.com/nunomaduro/skeleton-php/master/docs/example.png" height="300" alt="Skeleton Php">
-    <p align="center">
-        <a href="https://github.com/nunomaduro/skeleton-php/actions"><img alt="GitHub Workflow Status (master)" src="https://github.com/nunomaduro/skeleton-php/actions/workflows/tests.yml/badge.svg"></a>
-        <a href="https://packagist.org/packages/nunomaduro/skeleton-php"><img alt="Total Downloads" src="https://img.shields.io/packagist/dt/nunomaduro/skeleton-php"></a>
-        <a href="https://packagist.org/packages/nunomaduro/skeleton-php"><img alt="Latest Version" src="https://img.shields.io/packagist/v/nunomaduro/skeleton-php"></a>
-        <a href="https://packagist.org/packages/nunomaduro/skeleton-php"><img alt="License" src="https://img.shields.io/packagist/l/nunomaduro/skeleton-php"></a>
-    </p>
-</p>
+# Indonesia Utilities
 
-------
-This package provides a wonderful **PHP Skeleton** to start building your next package idea.
+Indonesian utilities package for payment applications.
 
 > **Requires [PHP 8.3+](https://php.net/releases/)**
 
-⚡️ Create your package using [Composer](https://getcomposer.org):
+## Installation
+
+Install via [Composer](https://getcomposer.org):
 
 ```bash
-composer create-project nunomaduro/skeleton-php --prefer-source PackageName
+composer require awinarko/indonesia-utilities
 ```
+
+## Features
+
+- **Currency** - Format and parse Indonesian Rupiah (IDR)
+- **Terbilang** - Convert numbers to Indonesian words
+- **NIK** - Validate and parse Indonesian ID numbers (Nomor Induk Kependudukan)
+- **Phone Numbers** - Validate and format Indonesian phone numbers
+- **Bank Codes** - Indonesian bank code utilities and resolvers
+
+## Usage
+
+### Currency Formatting
+
+```php
+use Awinarko\IndonesiaUtilities\Currency\RupiahFormatter;
+
+// Format numbers as Rupiah
+```
+
+### Terbilang (Number to Words)
+
+```php
+use Awinarko\IndonesiaUtilities\Terbilang\Terbilang;
+
+// Convert numbers to Indonesian words
+```
+
+### NIK Validation
+
+```php
+use Awinarko\IndonesiaUtilities\Nik\NikValidator;
+
+// Validate Indonesian ID numbers
+```
+
+### Phone Number Handling
+
+```php
+use Awinarko\IndonesiaUtilities\PhoneNumber\PhoneNumberValidator;
+
+// Validate Indonesian phone numbers
+```
+
+### Bank Codes
+
+```php
+use Awinarko\IndonesiaUtilities\Bank\BankCode;
+
+// Work with Indonesian bank codes
+```
+
+## Development
 
 🧹 Keep a modern codebase with **Pint**:
 ```bash
@@ -44,4 +89,6 @@ composer test:unit
 composer test
 ```
 
-**Skeleton PHP** was created by **[Nuno Maduro](https://twitter.com/enunomaduro)** under the **[MIT license](https://opensource.org/licenses/MIT)**.
+## License
+
+**Indonesia Utilities** is open-sourced software licensed under the **[MIT license](https://opensource.org/licenses/MIT)**.
